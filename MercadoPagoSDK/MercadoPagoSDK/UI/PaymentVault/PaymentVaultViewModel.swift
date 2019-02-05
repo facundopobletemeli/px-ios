@@ -27,6 +27,8 @@ class PaymentVaultViewModel: NSObject {
 
     var mercadoPagoServicesAdapter: MercadoPagoServicesAdapter!
 
+    let advancedConfiguration: PXAdvancedConfiguration
+    
     internal var isRoot = true
 
     init(amountHelper: PXAmountHelper, paymentMethodOptions: [PaymentMethodOption], customerPaymentOptions: [PXCardInformation]?, paymentMethodPlugins: [PXPaymentMethodPlugin], paymentMethods: [PXPaymentMethod], groupName: String? = nil, isRoot: Bool, email: String, mercadoPagoServicesAdapter: MercadoPagoServicesAdapter, callbackCancel: (() -> Void)? = nil, advancedConfiguration: PXAdvancedConfiguration) {
