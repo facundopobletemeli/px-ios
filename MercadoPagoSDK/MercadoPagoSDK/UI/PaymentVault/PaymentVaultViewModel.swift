@@ -22,7 +22,6 @@ class PaymentVaultViewModel: NSObject {
     var displayItems = [PaymentOptionDrawable]()
     var currency: PXCurrency = SiteManager.shared.getCurrency()
 
-    let advancedConfiguration: PXAdvancedConfiguration
     var customerId: String?
 
     var mercadoPagoServicesAdapter: MercadoPagoServicesAdapter!
